@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Karthik Kumar - Devops Engineer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/de9fbb51b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <nav>
+          <p class="name"><span>K</span>arthik<span>.</span></p>
+          <ul id="sideMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-regular fa-circle-xmark"
+              id="mobile"
+              onclick="closeMenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="mobile" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div>
+            <p>DevOps Engineer</p>
+            <h1>Hey, I'm <span>Karthik</span></h1>
+          </div>
+          <div><img src="./assets/Karthik.jpeg" /></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- -------------------about------------ -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./assets/cloud.jpg" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title m-bottom">About Me</h1>
+              <p class="para">
+                Having worked as a DevOps engineer for around five years in
+                various capacities, this techie has outstanding knowledge in
+                build and release engineering, AWS, CI/CD pipeline, automating,
+                configuring, and deploying instances on cloud environments and
+                data centers, and Linux/Windows administration.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Automate CI/CD</span><br /></li>
+                  <li>
+                    <span>Google Cloud Platform (GCP) , AWS, Azure </span><br />
+                  </li>
+                  <li><span>Containerization and Orchestration</span><br /></li>
+                  <li><span>Monitoring, Logging and Security</span><br /></li>
+                  <li>
+                    <span
+                      >Configuration Management and Infrastructure as Code
+                      (IaC)</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2020 - Current</span><br />
+                    DevOps Engineer at MedAvail Technologies Inc.
+                  </li>
+                  <li>
+                    <span>2020 </span><br />
+                    DevOps Architect at BMO
+                  </li>
+                  <li>
+                    <span>2015 - 2017</span><br />
+                    Build And Release Engineer at HAMMERO TECHNOLOGIES<br />
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2017 - 2019 PGDM</span><br />
+                    Computer Networks, St. Clair College
+                    <br />
+                  </li>
+                  <li>
+                    <span> 2011 - 2015 B.Tech </span><br />Computer Science &
+                    Engineering , Sri Sai Jyothi Engineering College
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------ services  -------------------->
+      <section id="services">
+        <div class="container">
+          <h1 class="sub-title">What I can do?</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-cloud"></i>
+              <h2>Cloud Platform</h2>
+
+              <p class="para" id="readMoreCloud">
+                Build reliable CI/ CD pipelines for automated software
+                development processes by utilising cloud services such as AWS
+                CodePipeline, Azure DevOps, or Google Cloud Build.
+              </p>
+              <a onclick="readMoreCloud()" id="cloud">Read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-robot"></i>
+              <h2>Automation Deployments</h2>
+
+              <p class="para" id="readMoreDeploy">
+                Deploying and managing containerized applications using services
+                like Azure Kubernetes Service (AKS) and Azure Container Registry
+                (ACR).
+                <br /><br />
+                Assist in designing and implementing fully automated CI/CD
+                pipelines using tools like Azure DevOps, enabling efficient and
+                rapid software delivery.
+              </p>
+              <a onclick="readMoreDeploy()" id="deploy">Read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-shield"></i>
+              <h2>Security</h2>
+
+              <p class="para" id="readMoreSecurity">
+                Security best practices in areas such as access control,
+                encryption, and secure coding, and experience in implementing
+                security measures throughout the development lifecycle.
+              </p>
+              <a onclick="readMoreSecurity()" id="security">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------ portfolio  -------------------->
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">What have I done?</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./assets/Devops.jpg" alt="" />
+              <div class="layer">
+                <h3>Project 1</h3>
+                <p class="para">
+                  Led the design and implementation of automated CI/CD pipelines
+                  in Azure DevOps, reducing software delivery time by 30%.
+                  Proficient in deploying and managing containerized
+                  applications with Azure Kubernetes Service (AKS), utilizing
+                  Azure Container Registry (ACR) for Docker image management
+                </p>
+                <a href="" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assets/operatingSystem.jpg" alt="" />
+              <div class="layer">
+                <h3>Project 2</h3>
+                <p class="para">
+                  Administered Jenkins for Build, Test, and Deploy processes
+                  with SVN/GIT, automating weekly releases using ANT/Maven for
+                  Java code. Managed Red Hat Enterprise Linux and CentOS,
+                  configured AWS VPC networks, and led migration of services to
+                  AWS, covering design, network, data migration, automation, and
+                  documentation.
+                </p>
+                <a href="" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assets/operations.jpg" alt="" />
+              <div class="layer">
+                <h3>Project 3</h3>
+                <p class="para">
+                  Implemented automated Linux infrastructure on CentOS and AWS,
+                  migrating applications from Windows. Utilized AWS
+                  CloudFormation for VPC configuration and managed scalable
+                  infrastructure with Ansible and Puppet
+                </p>
+                <a href="" target="_blank">
+                  <i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn" disabled>See more</button>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title m-bottom">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i>
+                <a href="mailto: karthikbandi.995@gmail.com">Karthik Bandi </a>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i
+                ><a href="tel: 647-873-3008"> 647-873-3008</a>
+              </p>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/karthikbandi995/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/karthikkumardevops9" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <a href="./assets/Karthik-Resume.pdf" class="btn btn-2" download
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  id="name"
+                  required
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  required
+                  placeholder="Email"
+                />
+                <textarea
+                  name="Message"
+                  id="msg"
+                  rows="8"
+                  cols="40"
+                  placeholder="Type your message..."
+                ></textarea>
+                <button type="submit" class="btn btn-2">Submit</button>
+              </form>
+              <div id="success-msg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="credits">
+        Images from
+        <a href="https://www.freepik.com/popular-photos" target="_blank"
+          >Freepik</a
+        >
+      </p>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>copyright @ <a href="#home"> Karthik Bandi</a></p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
